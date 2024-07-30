@@ -1,6 +1,8 @@
 name: Check GitHub commands
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
       - run: echo "This is my First Yml file"
+ 
