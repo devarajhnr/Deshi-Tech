@@ -1,11 +1,17 @@
-name: Print my address
-#run-name: Print my address | ${{ inputs.your_name }} | ${{ inputs.your_name }}
-on: 
+name: abc - check access control
+run-name: check-access-control | subject area [${{ inputs.subjectarea }}]
+on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'     
+      subjectarea:
+        description: Subject Area (3-Letter)
+        default: ''
         required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'  
+
+jobs:
+  check-access-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'This is test statement'
+
+          
