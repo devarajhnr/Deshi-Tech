@@ -1,4 +1,5 @@
 name: Print my address
+run-name: Print my address | ${{ inputs.your_name }} | ${{ inputs.your_name }}
 on:
   workflow_dispatch:
     inputs:
