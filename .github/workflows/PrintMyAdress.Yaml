@@ -1,15 +1,11 @@
 name: Print my address
-run-name: Print my address | ${{ inputs.your_name }} | ${{ inputs.your_name }}
-on:
+#run-name: Print my address | ${{ inputs.your_name }} | ${{ inputs.your_name }}
+on: 
   workflow_dispatch:
     inputs:
-      your_name:
-        type: string
-        description: your_name
-        default: ''
+      logLevel:
+        description: 'Log level'     
         required: true
-jobs:
-  printing_myaddress:
-    run-on: ubantu-latest
-    steps:
-      echo 'Yourname is:'
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
