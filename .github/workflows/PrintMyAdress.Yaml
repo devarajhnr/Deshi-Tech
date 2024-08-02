@@ -1,0 +1,13 @@
+name: Print my address
+on:
+  workflow_dispatch:
+    inputs:
+      your_name:
+        type: string
+        description: your_name
+        required: true
+jobs:
+  printing_myaddress:
+    run-on: ubantu-latest
+    steps:
+      echo 'Yourname is:'
