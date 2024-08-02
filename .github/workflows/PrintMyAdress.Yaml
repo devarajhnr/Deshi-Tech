@@ -5,6 +5,7 @@ on:
       your_name:
         type: string
         description: your_name
+        default: ''
         required: true
 jobs:
   printing_myaddress:
