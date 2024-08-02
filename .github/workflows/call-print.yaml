@@ -1,0 +1,12 @@
+name: Call print workflow
+
+on: 
+ workflow_run:
+  workflows: [".github/workflows/print.yaml"]
+  types: [completed]
+ 
+jobs:
+  Calling-to-print-workflow:
+    runs-on: windows-latest
+    steps:
+      - run: echo 'Called print statement workflow statement successfully'

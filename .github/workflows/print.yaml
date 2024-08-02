@@ -1,0 +1,10 @@
+name: Print statement
+
+on: push
+ 
+
+jobs:
+  printing-the-test-value:
+    runs-on: windows-latest
+    steps:
+      - run: echo 'This is test statement'
