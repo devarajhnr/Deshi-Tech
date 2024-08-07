@@ -1,7 +1,12 @@
 name: Enter_your_address
-run-name: check-access-control | subject area [${{ inputs.subjectarea }}]
+run-name: Your address is | subject area [${{ inputs.subjectarea }}]
 on: 
   workflow_dispatch:
+   inputs:
+      subjectarea:
+        description: Enter your sweet name
+        default: ''
+        required: true
 jobs:
   display_files:
     name: Your address is 
