@@ -1,9 +1,9 @@
 name: Enter_your_address
-run-name: Your address is | subject area [${{ inputs.subjectarea }}]
+run-name: Your address is inside
 on: 
   workflow_dispatch:
    inputs:
-      subjectarea:
+      name:
         description: Enter your sweet name
         default: ''
         required: true
@@ -14,5 +14,5 @@ jobs:
     steps:        
     - name: display output
       run: |
-          echo ${{ inputs.subjectarea }}
+          echo ${{ inputs.name }}
       shell: bash
