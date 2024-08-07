@@ -1,4 +1,5 @@
 name: Enter_your_address
+run-name: check-access-control | subject area [${{ inputs.subjectarea }}]
 on: 
   workflow_dispatch:
 jobs:
