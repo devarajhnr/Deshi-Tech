@@ -7,6 +7,14 @@ on:
         description: Enter your sweet name
         default: ''
         required: true
+      city:
+        description: Enter your city
+        default: ''
+        required: true
+      pin:
+        description: Enter your City PIN
+        default: ''
+        required: true
 jobs:
   display_files:
     name: Your address is 
@@ -14,5 +22,5 @@ jobs:
     steps:        
     - name: display output
       run: |
-          echo ${{ inputs.name }}
+          echo ${{ inputs.name }},${{ inputs.city }},${{ inputs.pin }}
       shell: bash
