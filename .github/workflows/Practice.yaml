@@ -1,8 +1,7 @@
 name: This is practice yaml file
 on: push
 jobs:
-  Test job
-runs-on: ubuntu-latest
-  steps:
-    test steps
-    dir
+  runs-on: ubuntu-latest
+    steps:
+      test steps
+      run: dir
