@@ -2,6 +2,6 @@ name: This is practice yaml file
 on: push
 jobs:
   runs-on: ubuntu-latest
-    steps:
-      test steps
-      run: dir
+  steps:
+    test steps
+    run: dir
