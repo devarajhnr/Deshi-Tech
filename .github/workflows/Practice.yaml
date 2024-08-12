@@ -1,6 +1,6 @@
 name: My first job
 
-on: [push]
+on: workflow_dispatch
 
 jobs:
   display_files:
