@@ -3,8 +3,8 @@ name: My first code
 on: workflow_dispatch
 
 jobs:
-  display_files:
-    name: Directeries are 
+  display_my_code:
+    name: My code output
     runs-on: ubuntu-latest
     steps:        
     - name: display output
