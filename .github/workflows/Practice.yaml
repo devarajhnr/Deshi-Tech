@@ -1,7 +1,13 @@
-name: This is practice yaml file
-on: push
+name: My first job
+
+on: [push]
+
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    test steps
-    run: dir
+  display_files:
+    name: Directeries are 
+    runs-on: ubuntu-latest
+    steps:        
+    - name: display output
+      run: |
+          dir
+      shell: bash
