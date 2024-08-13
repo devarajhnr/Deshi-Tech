@@ -15,4 +15,4 @@ jobs:
     steps:        
     - name: display output
       run: |
-          echo Yourname: ${{ parameters.default }}
+          echo Yourname: ${{ inputs.parameters }}
