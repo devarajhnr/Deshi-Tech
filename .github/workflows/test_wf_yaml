@@ -1,0 +1,9 @@
+name: deploy_batch_resources
+run-name: 'batch ${{ fromJSON(inputs.parameters).appcode_type }} | ${{ fromJSON(inputs.parameters).aa_application }} | ${{ fromJSON(inputs.parameters).env }} | ${{ fromJSON(inputs.parameters).deployment_environment[0].adb_workspace_number }}'
+on:
+  workflow_dispatch:
+    inputs:
+      parameters:
+        description: Parameters
+        required: true
+        default: '{"aa_id":"732253","beetles_version":"1.4.1","aa_application":"dessa","appcode_type":"source","appshortname_config":"appshortname","init_repo":{"add_secrets":false},"env":"p","repo_type":"pr","app_sp":{"client_id":"b227c7ee-906a-4359-81ca-c438d13b6192"},"deployment_environment":[{"location":"eastus","adb_workspace_number":"001","adb_cluster_id":"0624-210720-exit93"}],"repo_name":"dessa-batch-test"}'
