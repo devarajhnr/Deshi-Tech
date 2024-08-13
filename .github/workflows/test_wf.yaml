@@ -15,4 +15,4 @@ jobs:
     steps:        
     - name: display_parameter_input
       run: |
-          echo Yourname: ${{ inputs.parameters }}
+          echo "Yourname:" ${{ inputs.parameters }}
