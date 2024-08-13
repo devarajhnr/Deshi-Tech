@@ -1,5 +1,5 @@
 name: deploy_batch_resources
-run-name: 'batch ${{ fromJSON(inputs.parameters).appcode_type }} | ${{ fromJSON(inputs.parameters).aa_application }} | ${{ fromJSON(inputs.parameters).env }} | ${{ fromJSON(inputs.parameters).deployment_environment[0].adb_workspace_number }}'
+#run-name: 'batch ${{ fromJSON(inputs.parameters).appcode_type }} | ${{ fromJSON(inputs.parameters).aa_application }} | ${{ fromJSON(inputs.parameters).env }} | ${{ fromJSON(inputs.parameters).deployment_environment[0].adb_workspace_number }}'
 on:
   workflow_dispatch:
     inputs:
